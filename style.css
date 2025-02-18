@@ -1360,3 +1360,23 @@ right: 20px;
   transform: rotate(0deg);
 }
 }
+
+@media (width < 570px){
+  .container {
+    min-width: 400px;
+  }
+.bar{
+  width: 300px;
+}
+.info{
+  width: 300px;
+}
+.Technical-bar {
+  width: 350px;
+}
+.skillcontainer1 {
+  width: 200px;
+  height: 610px;
+  padding: 30px 60px;
+}
+}
