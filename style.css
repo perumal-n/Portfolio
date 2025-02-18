@@ -1362,9 +1362,6 @@ right: 20px;
 }
 
 @media (width < 570px){
-  .container {
-    min-width: 400px;
-  }
 .bar{
   width: 300px;
 }
