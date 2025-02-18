@@ -1362,6 +1362,10 @@ right: 20px;
 }
 
 @media (width < 570px){
+  .about-container1 p {
+    width: 350px;
+    color: white;
+}
 .bar{
   width: 300px;
 }
