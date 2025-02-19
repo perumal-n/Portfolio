@@ -30,7 +30,7 @@ function proje(data){
 function rem(cli){
   for(let z of screen){
     if(cli === z.id){
-      z.classList.add("marks");
+      z.classList.remove("mark");
     }
   }
 }
