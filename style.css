@@ -1095,6 +1095,11 @@ right: 20px;
 opacity: 0.3;
 }
 
+form div i{
+  position: absolute;
+  padding: 15px;
+  right: 50px;
+}
 @media (width < 1490px){
   .container {
     padding: 135px;

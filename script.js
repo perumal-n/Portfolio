@@ -50,3 +50,24 @@ function mespro(){
 function messx(){
   promain.style = "display:none"
 }
+
+
+
+let id = (id)=> document.getElementById(id);
+
+let newclass = (newclass) => document.getElementsByClassName(newclass);
+
+let a = id("username"),
+b = id("email"),
+c = id("phone"),
+form = id("form"),
+
+error = newclass("error"),
+fail = newclass("fail"),
+succ = newclass("succ")
+
+form.addEventListener("submit",(e)=>{
+  console.log(e)
+  e.preventDefault();
+})
+
