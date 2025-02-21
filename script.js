@@ -34,11 +34,17 @@ function rem(cli){
     }
   }
 }
-let like = document.getElementsByClassName("like")
+let like = document.getElementsByClassName("like"),count = 0;
 function likes(col){
   for(let z of like){
     if(col == z.id){
+     if(count%2==0){
       z.classList.add("likered");
+     }
+     else{
+      z.classList.remove("likered");
+     }
+     count++
     }
   }
 }
@@ -67,7 +73,27 @@ fail = newclass("fail"),
 succ = newclass("succ")
 
 form.addEventListener("submit",(e)=>{
-  console.log(e)
   e.preventDefault();
+
+  engine(a,0,"Username cannot be blank");
+  engine(b,1,"Email cannot be blank");
+  engine(c,2,"Phone cannot be blank");
 })
 
+
+
+function engine(id,index,message){
+  if(id.value.trim() === ""){
+    error[index].innerText = message;
+    fail[index].style = "opacity:1"
+    succ[index].style = "opacity:0"
+    a.style = "background-color:rgb(255,0,0,0.318)"
+    b.style = "background-color:rgb(255,0,0,0.318)"
+    c.style = "background-color:rgb(255,0,0,0.318)"
+  }
+  else{
+    error[index].innerText = ""
+    fail[index].style = "opacity:0"
+    succ[index].style = "opacity:1"
+  }
+}

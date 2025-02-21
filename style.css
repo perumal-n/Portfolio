@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  transition: all .5s;
+  transition: all .3s;
   scroll-behavior: smooth;
 }
 :root{
@@ -223,6 +223,9 @@ body{
   scale: 1!important;
   transition: all 0.7s;
   box-shadow: 2px 2px 5px black;
+}
+.click a{
+  color: #00ABE4;
 }
 
 /* About */
@@ -817,7 +820,7 @@ body{
 }
 .likered{
   color: red;
-  transition: all 0s;
+  transition: all none;
 }
 #project{
   position: relative;
@@ -835,6 +838,9 @@ body{
   top: 250px;
   left: 500px;
   display: none;
+}
+#seeproject a{
+  color: black;
 }
 
 .messxx>h4{
@@ -972,7 +978,8 @@ body{
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #00ABE4;
+  background-color: rgba(0, 171, 228);
+  filter: blur(2px);
 }
 .contactadd{
   display: flex;
@@ -1099,6 +1106,22 @@ form div i{
   position: absolute;
   padding: 15px;
   right: 50px;
+}
+
+.error{
+  font-size: 15px;
+  color: rgba(255, 0, 0);
+  margin-left: 30px;
+}
+.fail{
+  color: red;
+  opacity: 0;
+  transition: none;
+}
+.succ{
+  color: rgba(0, 128, 0, 0.541);
+  opacity: 0;
+  transition: none;
 }
 @media (width < 1490px){
   .container {
@@ -1250,6 +1273,10 @@ form div i{
   left: 200px;
 }
 .probox {
+  width: 350px;
+  height: 400px;
+}
+.screen{
   width: 350px;
   height: 400px;
 }
