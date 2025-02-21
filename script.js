@@ -77,7 +77,7 @@ form.addEventListener("submit",(e)=>{
 
   engine(a,0,"Username cannot be blank");
   engine(b,1,"Email cannot be blank");
-  engine(c,2,"Phone cannot be blank");
+  engine(c,2,"Phone Number cannot be blank");
 })
 
 
