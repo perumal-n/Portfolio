@@ -114,7 +114,7 @@ body{
   cursor: pointer;
   position: fixed;
   z-index: 999;
-  right: 30px;
+  right: 0px;
 }
 .content3 i:hover{
   color: rgb(1, 177, 236);
@@ -1396,6 +1396,11 @@ right: 20px;
 }
 
 @media (width < 570px){
+  .content1 {
+    width: 285px;
+    align-items: center;
+    justify-content: center;
+}
   .about-container1 p {
     width: 350px;
     color: white;
@@ -1407,11 +1412,107 @@ right: 20px;
   width: 200px;
 }
 .Technical-bar {
-  width: 350px;
+  width: 270px;
 }
 .skillcontainer1 {
   width: 200px;
   height: 610px;
   padding: 30px 60px;
+}
+.content2 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.about-container2 {
+  min-width: 270px;
+  height: 300px;
+}
+.social {
+  left: -23px;
+}
+#skills {
+  padding: 60px;
+}
+.content3 {
+  right: -34px;
+}
+.promain {
+  padding: 65px;
+}
+}
+@media (width < 460px){
+
+  .content1{
+    justify-content: center;
+  }
+  .content1 h2 {
+    font-size: 29px;
+}
+  .contactcontainer {
+    width: 330px;
+}
+.contactcontainer2 form input {
+  width: 276px;
+}
+.contactcontainer2 form textarea {
+  width: 276px;
+}
+.content1 h3 {
+  width: 217px;
+  font-size: 1.6rem;
+  position: relative;
+  color: white;
+  -webkit-text-stroke: 0.2vw black;
+}
+.content1 p{
+  font-size: 15px;
+  text-align: center;
+}
+.cvbtn {
+  width: 140px;
+}
+.cvbtn i {
+  width: 30px;
+  height: 30px;
+  right: 3px;
+}
+.cvbtn button {
+  width: 140px;
+}
+.Technical-bar {
+  width: 225px;
+}
+.about-container1 h2 {
+  font-size: 26px;
+  color: white;
+}
+.about-container1 {
+  width: 375px;
+}
+.about-container1 p {
+  width: 300px;
+}
+.heading1 {
+  width: 175px;
+  font-size: 20px;
+}
+.skillcontainer1 {
+  width: 200px;
+  padding: 18px 50px;
+}
+.Technical-bar .bar .info {
+  margin-bottom: 20px;
+}
+.Technical-bar .bar .progress-line {
+  width: 85%;
+}
+.probox {
+  width: 250px;
+  height: 265px;
+}
+.screen {
+  width: 250px;
+  height: 265px;
 }
 }
