@@ -117,7 +117,7 @@ body{
   right: 0px;
 }
 .content3 i:hover{
-  color: rgb(1, 177, 236);
+  color: rgb(0, 159, 211);
   scale: 1.3;
 }
 .content3 span{
@@ -156,6 +156,9 @@ body{
   flex-direction: column;
   gap: 10px;
   margin-top: 20px
+}
+.click a i:hover{
+  color: #000;
 }
 .linkicon:hover .click{
   opacity: 1;
@@ -416,6 +419,7 @@ body{
   padding: 30px 90px;
 }
 .heading1{
+  /* width: 300px; */
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -1146,7 +1150,7 @@ form div i{
     background: linear-gradient(42deg, rgb(0 191 255) 0%, rgb(7 193 255) 29.4%, rgba(248, 248, 248, 1) 27%);
 }
 #promain {
-  left: 480px;
+  left: 375px;
 }
 }
 @media (width < 1190px){
@@ -1169,7 +1173,52 @@ form div i{
      column-gap: 50px;
    }
    #promain {
-    left: 280px;
+    left: 350px;
+}
+.content1{
+  align-items: center;
+}
+.Technical-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.Technical-bar .bar{
+  width: 300px;
+}
+.Technical-bar .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+}
+#skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skillcontainer{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skillcontainer2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillmain {
+  width: 300px;
+  margin-top: 50px;
+  flex-direction: column;
+  gap: 0px;
+  margin-left: -300px;
 }
 }
 @media (width < 1024px){
@@ -1219,7 +1268,7 @@ form div i{
 .skillmain {
   margin-top: 50px;
   flex-direction: column;
-  gap: 150px;
+  gap:0px;
 }
 .skillcontainer1 {
   justify-content:center ;
@@ -1229,7 +1278,7 @@ form div i{
 .Technical-bar .bar .progress-line {
   position: relative;
   border-radius: 10px;
-  width: 60%;
+  width: 100%;
   height: 10px;
   background-color: #000;
   animation: ani 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -1274,7 +1323,7 @@ form div i{
   column-gap: 50px;
 }
 #promain {
-  left: 200px;
+  left: 250px;
 }
 .probox {
   width: 350px;
@@ -1316,8 +1365,21 @@ top: 10px;
 right: 20px;
 }
 }
-
+@media (width < 900px){
+  #promain {
+    left: 195px;
+  }
+  #skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (width < 760px){
+  #about h3{
+    font-size: 32px;
+  }
   .about-container1 p {
     width: 520px;
     color: white;
@@ -1365,16 +1427,25 @@ right: 20px;
 .skillcontainer1 {
   width: 400px;
   height: 610px;
+  margin-left: 100px;
   padding: 30px 60px;
 }
 .skillmain {
   margin-top: 50px;
   flex-direction: column;
-  gap: 150px;
+  gap: 0px;
   justify-content:center;
+}
+#skills h3 {
+  font-size: 32px;
+  text-align: center;
 }
 .educontainer {
   gap: 20px;
+}
+.eduheading {
+  font-size: 32px;
+  color: #00ABE4;
 }
 .educ {
   width: 65px;
@@ -1394,6 +1465,18 @@ right: 20px;
 }
 .probox4 {
   transform: rotate(0deg);
+}
+#promain {
+  left: 90px;
+  width: 375px;
+  height: 470px;
+}
+.radial-bars .radial-bar svg {
+  top: 65%;
+  left: 50%;
+}
+.radial-bar .percentage {
+  top: 62%;
 }
 }
 
@@ -1416,9 +1499,11 @@ right: 20px;
 .Technical-bar {
   width: 270px;
 }
+
 .skillcontainer1 {
-  width: 200px;
+  width: 400px;
   height: 610px;
+  margin-left: 100px;
   padding: 30px 60px;
 }
 .content2 {
@@ -1437,10 +1522,15 @@ right: 20px;
   padding: 60px;
 }
 .content3 {
-  right: -34px;
+  right: -53px;
 }
 .promain {
   padding: 65px;
+}
+#promain {
+  left: 50px;
+  width: 375px;
+  height: 470px;
 }
 }
 @media (width < 460px){
@@ -1496,12 +1586,14 @@ right: 20px;
   width: 300px;
 }
 .heading1 {
-  width: 175px;
+  width: 203px;
   font-size: 20px;
 }
 .skillcontainer1 {
-  width: 200px;
-  padding: 18px 50px;
+  width: 400px;
+  height: 610px;
+  margin-left: 100px;
+  padding: 30px 60px;
 }
 .Technical-bar .bar .info {
   margin-bottom: 20px;
@@ -1516,5 +1608,10 @@ right: 20px;
 .screen {
   width: 250px;
   height: 265px;
+}
+#promain {
+  left: 30px;
+  width: 329px;
+  height: 455px;
 }
 }
