@@ -32,6 +32,22 @@ body{
   flex-direction: column;
   justify-content: left;
   gap: 25px;
+  position: relative;
+  animation: img1 1s ease-out;
+  animation-fill-mode: backwards;
+  right: 0;
+}
+
+@keyframes img1 {
+  from {
+      opacity: 0;
+      right: -10%;
+  }
+
+  to {
+      opacity: 1;
+      right:0%;
+   }
 }
 .content1 h2{
   font-family: "Archivo Black", serif;
@@ -77,6 +93,21 @@ body{
   overflow: hidden;
   border-radius: 25% 10%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: img2 1s ease-out;
+  animation-fill-mode: backwards;
+  left: 0%;
+}
+
+@keyframes img2 {
+  from {
+      opacity: 0;
+      left: -20%;
+  }
+
+  to {
+      opacity: 1;
+      left:0%;
+  }
 }
 .content2::before{
   content: '';
@@ -257,6 +288,25 @@ body{
   flex-direction: column;
   justify-content: left;
   gap: 30px;
+  position: relative;
+  animation-delay: 4s;
+  animation: img3 3s linear;
+  animation-timeline: view();
+  animation-range: entry -10% cover 50%;
+  top: 0;
+  left: 0%;
+}
+
+@keyframes img3 {
+  from {
+      opacity: 0;
+      left: -10%;
+  }
+
+  to {
+      opacity: 1;
+      left:0%;
+}
 }
 .about-container1 button{
   width: 120px;
@@ -348,6 +398,24 @@ body{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: relative;
   overflow: hidden;
+  animation-delay: 4s;
+  animation: img4 3s linear;
+  animation-timeline: view();
+  animation-range: entry -10% cover 50%;
+  top: 0;
+  right: 5%;
+}
+
+@keyframes img4 {
+  from {
+      opacity: 0.7;
+      right: -10%;
+  }
+
+  to {
+      opacity: 1;
+      right:5%;
+}
 }
 .about-container2 img{
   border-radius: 10px;
@@ -1291,7 +1359,7 @@ form div i{
   #about {
     /* height: 100vh; */
     padding: 50px;
-    background: linear-gradient(400deg, rgb(0 191 255) 0%, rgb(7 193 255) 66.7%, rgba(248, 248, 248, 1) 41%);
+    background: linear-gradient(400deg, rgb(0 191 255) 0%, rgb(7 193 255) 68.7%, rgba(248, 248, 248, 1) 41%);
 }
 }
 @media (width < 1465px){
